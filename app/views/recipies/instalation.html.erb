@@ -1,0 +1,75 @@
+<h1>Instalations</h1>
+
+<br>
+
+<br>
+
+<h3>Let's get started</h3>
+
+<p>i den her side vil vi hurtigt gennemgå de programmer der er vigtige for at komme godt igang med ruby on rails(ROR). Jeg vil ikke spilde meget tid på forklaring, da det er min erfaring at man hurtigst lære rails ved at kaste sig ud i det</p>
+
+<br>
+
+<h3>unix</h3>
+
+<p>RoR er et udvikler værktøj der tillader at lave enormt stærke web aplikationer, Men et af de største argumenter imod ROR, er at der ikke er optimeret til windows, (det er ikke umulig men det er fustrerende) så hvis man ikke benytter sig af et unix baseret system (mac/linux) så er man på bar bund.</p>
+
+<br>
+
+<h4>virtuelle maskiner hyper v og virtualbox</h4>
+
+<p>Men dette kan man komme omkrig på forskellige måder, man kan installere en virtuel maskine (da ROR er en super letvægts platform så kan det sagtens køre på en ældre maskinde med en virtuel computer på den uden at det hele brender sammen og fryser. Dette kan gøres via hyperv, hviklet er windows egen virtuelle platform. instalation og opsætning findes i videoen nedenunder.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sAe7iiZZE3Y" frameborder="0" allowfullscreen>
+	<h1>hyper-v</h1>
+</iframe>
+
+<br>
+
+<p>Virtualbox er helt klart mit foretrukne windos kompatible virtuelle maskine, men den kommer kun med den store microsoft licens. Heldivis er der masser andre alternativer så som virtualbox hvilket er et ganske udemærket værktøj son bliver hyppigt brugt af både linux og mac brugere. Instalation og opsætning findes i videoen nedenfor </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5yJ1d7HhB0s" frameborder="0" allowfullscreen>
+	<h1>Virtualbox</h1>
+</iframe>
+
+<h3>Ruby version manager</h3>
+
+<p>great! nu hvor vi har et unix baseret styresystem på vores maskine, så er vi et skrit tættere på at lave en ruby aplikation. <br>
+
+det næste skridt er at installere ruby, men vi vil gøre det en smule bedre vi vil installere RVM, Rvm eller Ruby Version Manager er et stykke software der tillader os at installere forskellige versioner af ROR og forskellige at have flere  Gemsets (klassebiblioteker) så man kan have gang i mere end et projekt ad gangen <br>
+<br>
+lyder det godt? fedt så lad os komme igang</p>
+<br>
+<br>
+<p>det første vi skal gøre er at åbne vores linux terminal dette gør man ved at trykke CTRL+ALT+T der skulle komme et vindue op med en sort baggrund der ser cirka sådan ud</p>
+<br>
+<%=image_tag("terminal.png")%>
+<p>er det ens? great lad os fortsætte</p>
+<br>
+<br>
+<p>Det er en generel ting i linux at man instalere sine programmer gennem terminalen, og de næste komandoer vi skal taste ind behøver du ikke forstå. bare copy paste hvad der står på denne side</p>
+<br>
+<kbd>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+</kbd>
+<br>
+<kbd>\curl -sSL https://get.rvm.io | bash -s stable --ruby
+</kbd>
+<br>
+<p>hvis din maskine ikke smider en fejlbesked så er vi snart færdig med vores instalation, hvis ikke så er du velkommen til at besøge forummet og stille et spørgsmål</p>
+<br>
+<br>
+<h3>Installer ruby</h3>
+<p>okay, vi regner med at rvm instalationen har virket og at vi er klar til at installere ruby. <br>
+Det sidste skridt er et super let et, inde i terminalen skal du blot skrive 2 ting hvilket er følgende</p>
+<br>
+<kbd>rvm install 2.3.1</kbd>
+<br>
+<kbd>rvm gem install rails</kbd>
+<br>
+<br>
+<p>når disse er færdige så er rails instaleret og du er klar til at rykke videre til at lave din forste aplikation. Jeg vil anbefale dig til lige at tage et hurtigt kik på sidens rvm sektion for at se hvordan man instalere andre ruby versioner og hvordan man generere flere gemset</p>
+<br>
+<br>
+<p>sidst men ikke mindst så skal vi have en text editor så det blver nemmere for os at arbejde. Personligt så kan jeg rigitgt godt lide sublime text, så det er den vi vil instalere <br> klik pa linket nedenfor og download sublime og instaler</p>
+<br>
+<%=link_to "sublime text", "http://www.sublimetext.com/2"%>

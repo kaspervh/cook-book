@@ -1,0 +1,44 @@
+<h1>Din første aplikation</h1>
+<p>allrighty, så er det tid til at bygge din første aplikation, da ROR er et udviklerværktøj med rigtig mange bevægelige dele og features så vil vi starte med at lave en simpel hello world app og udvikle på denne app med små skridt indtil vi med rimelig selvtilid kan bygge en funktionel statisk hjemmeside. </p>
+<br>
+<br>
+<h4>Ny rails app</h4>
+<p>først skal vi producere en ny rails app dette gør vi ved at åbne terminalen og vælge en ruby verion i RVM og derefter skrive følgende komado i terminalen</p>
+<br>
+<kbd>rails new hello_world</kbd>
+<br>
+<br>
+<p>der efter burde terminalen printe en række beskeder der ser sådan ud</p>
+<%=image_tag("hello.png", :size => "500x300", :crop => :fill)%>
+<br>
+<br>
+<p>dser det sådan ud? perfekt! <br> hvis du finder mappen der hedder hello_world så kan du se at rails har lavet en masse filer og mapper, vi skal nok komme omkring det hele men lige nu er det ikke vigitgt</p>
+<br>
+<br>
+<h4>Rails Server</h4>
+
+ <p>faktisk så kan du allerede nu se din applikation ved at bruge en indbygget feature i rails <br> rails har en inbygget virtuel server der kan lade dig teste din applikation mens du arbejder.</p>
+ <br>
+ <p>inde i terminalen taster skal du skrive følgende komando</p>
+ <kbd>rails server</kbd>
+ <p>der efter så skulle terminalen se sådan ud</p>
+ <br>
+ <%=image_tag("rails-s.png", :size => "500x300", :crop => :fill)%>
+
+ <p>goodie!, så er det tid til at åbne vores browser. Da vi liǵe har startet en virtuel server så har vi ikke en almindelig url, men jeg kan fortælle dig at du skal skive localhost:3000 i url fæltet</p>
+ <br>
+ <p>når du er på siden så skulle det helst se sådan ud</p>
+ <%=image_tag("rails-startup.png", :size => "500x300", :crop => :fill)%>
+ <br>
+ <br>
+ <p>som du kan se så er der kun et billede på vores hjemmeside, og det er ikke en gang et billede som vi kender. så lad os gøre noget ved det og putte vores eget indhold i</p>
+ <br>
+ <br>
+<h4> rails Controlleren sidens hjerne</h4>
+ <p>rails bygger på en MVC arkitektur, det er lidt indviklet at forstå så lige nu kikker vi kun på controlleren<br> Controlleren er lidt ligesom applikationens hjerne, det styre alle dele af applikationen, uden den ville man ikke kunnet lave en rails applikation. </p>
+ <br>
+<p>Nu er det tid til at lave indhold på din hjemmeside, og det første vi skal lave er at generere en controller.  <br> i terminalen skal du skrive følgende komando</p>
+
+<kbd>rails new hello_world</kbd>
+
+
