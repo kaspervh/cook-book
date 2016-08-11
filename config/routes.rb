@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
   get 'recipies/index'
 
-  get 'recipies/instalation'
-
   get 'recipies/rvm'
 
-  get 'recipies/hello_world'
+  get 'how_to/instalation'
+
+  get 'how_to/hello_world'
+
+  get 'how_to/index'
 end

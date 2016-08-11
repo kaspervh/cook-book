@@ -1,4 +1,4 @@
-<h1>Din første aplikation</h1>
+<h1>x Din første aplikation</h1>
 <p>allrighty, så er det tid til at bygge din første aplikation, da ROR er et udviklerværktøj med rigtig mange bevægelige dele og features så vil vi starte med at lave en simpel hello world app og udvikle på denne app med små skridt indtil vi med rimelig selvtilid kan bygge en funktionel statisk hjemmeside. </p>
 <br>
 <br>
@@ -37,8 +37,37 @@
 <h4> rails Controlleren sidens hjerne</h4>
  <p>rails bygger på en MVC arkitektur, det er lidt indviklet at forstå så lige nu kikker vi kun på controlleren<br> Controlleren er lidt ligesom applikationens hjerne, det styre alle dele af applikationen, uden den ville man ikke kunnet lave en rails applikation. </p>
  <br>
-<p>Nu er det tid til at lave indhold på din hjemmeside, og det første vi skal lave er at generere en controller.  <br> i terminalen skal du skrive følgende komando</p>
+<p>Nu er det tid til at lave indhold på din hjemmeside, og det første vi skal lave er at generere en controller.  <br> i terminalen skal du skrive følgende komandoer</p>
+ <br>
+<kbd>rails generate controller home</kbd>
+<br>
+<kbd>subl . </kbd>
+ <br>
+<p>som du kan se så hoppede sublime text op med alle mapper der høre til vores rails applikation. <br> hvis du kikker i app/controllers, så kan du se at vores kommando har lavet en ny controller der hedder home_controller.</p>
+<p>inde i home controlleren skulle det helst se sådan ud</p>
+<br>
+<%=image_tag("home controller.png", :size => "500x75", :crop => :fill)%>
 
-<kbd>rails new hello_world</kbd>
+<p>skide godt! nu er det tid til at lave den først (og eneste) side i vores ROR applikation. <br>
+da jeg tror på at handling forklare bedre end ord så lad os hoppe direkte igang med at lave en controller action <br> inde i vores controller mellem class og end skal du skrive følgende.</p>
+<br>
+<%= image_tag("controller action.png", size: "200x100", :crop => :fill)%>
+<p>fedt nok, så er vi faktisk færdig med at bruge controlleren lige nu. men bare rolig, vi kommer mere ind på controlleren på MVC siden og i senere opgaver</p>
+<br>
 
+
+<h4>Routes sidens telefon bog</h4>
+<p>nu hvor vi har lavet en index action i vores home controller, så skal vi fortælle rails at destinationen er en side man kan navigere til. <br>
+Dette gør vi gennem vores routes!</p>
+<br>
+<p>inde i /app/config mappen skulle der være en fil der hedder routes <br>
+hvis du åbner routes så vil den se sådan ud</p>
+
+<%= image_tag("rails routes.png", size: "350x100", :crop => :fill)%>
+
+<p>Ńu skal vi lave en forbindelse mellem vores controller action og vores routes <br>
+grunden til at vi gør dette er hvis en bruger taster en url eller klikker på et link <br>
+så sender browseren en forspørgsel til vores routes som så fortæller vores controller hvad den skal begynde at arbejde på</p>
+<br>
+<p></p>
 
