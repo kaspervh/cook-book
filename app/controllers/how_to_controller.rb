@@ -8,4 +8,8 @@ class HowToController < ApplicationController
 
 	def hello_world
 	end
+
+	def statiske_sider
+	end
+
 end

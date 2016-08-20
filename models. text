@@ -1,0 +1,9 @@
+en sektion has many pages.
+
+en sektio has one name, and a title,
+
+a page has a title, and a description
+
+use case. a user can make new section, user can add content to section section has many contents
+
+page has many section content, tekst, billede, kommand, position

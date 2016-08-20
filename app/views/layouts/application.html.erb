@@ -26,13 +26,14 @@
           <ul class="nav navbar-nav">
             <li><%= link_to "Opskrifter", recipies_index_path%></li>
             <li><%= link_to "How to", how_to_index_path%></li>
+            <li><%= link_to "about", home_about_path%></li>
           </ul>
           <%=image_tag("ruby.jpg")%>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container", style="margin-top: 200px;">
 			<%= yield %>
     </div><!-- /.container -->
   </body>

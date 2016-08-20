@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'home/index'
+
+  get 'home/about'
+
   get 'recipies/index'
 
   get 'recipies/rvm'
@@ -12,4 +16,6 @@ Rails.application.routes.draw do
   get 'how_to/hello_world'
 
   get 'how_to/index'
+
+  get 'how_to/statiske_sider'
 end

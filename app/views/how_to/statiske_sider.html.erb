@@ -1,0 +1,46 @@
+<h1>Hello World del2 </h1>
+<br>
+<p>okay! nu hvor vi har lært the basics om at lave statiske sider i ROR, lad os så gå lidt videre og gøre vores index side om til hoved siden<br>
+er du klar? super lad os komme igang</p>
+<br>
+<p>inde i din routes fil skal du ændre den rute vi lavede i hello world øvelsen til</p>
+<br>
+<kbd>root 'home#index'</kbd>
+<br>
+<p>du kan se om det virker ved at starte serveren op og gå til localhost:3000 hvis du kan se din home/index side så virkedede det.</p>
+<br>
+<h4>links</h4>
+<br>
+<p>okay okay, en webaplikation er ikke serligt interasant med kun en side, så lad os lave nogle flere sider.<br>
+måden man gør dette på er ved at lave en ny action i sin controller, definere ruten til den action og til sidst lave en tekst fil i view mappen der hedder det samme som din controller action</p>
+<br>
+<p>nu hvor v ahr lavet en ny side skal vi så ikke lave et link til den nye side fra vores root side <br> dette gør vi ved at skrive følgende inde i vores root sides view fil</p>
+<br>
+<p>først skal du lave et rails tag, et rails tag er ligesom et hvert html tag men gør siden istand til at bruge noget ruby syntax<br>dette gør man ved at skrive følgende</p>
+<kbd><%= %></kbd>
+<br>
+<p>der efter skal vi fylde vores tag med ruby syntax, i det her tilfælde vil vi bruge vores link to komando<br>
+som ser sådan ud</p>
+<kbd>link_to "Linknavn", dit_controller_navn_din_action_navn_path </kbd>
+<p>se om du har link og om de sender dig til din anden side, hvis du kommer over på din nylavede side så Tilykke! du  har lært at lave links.</p>
+<br>
+<h4>Billeder</h4>
+<br>
+<p>goodie! så nu hvor vi har fundet ud af at lave links så skal vi kikke på at ligge billeder op på vores side <br>
+dette skridt kommer i to trin 1, vi skal downloade et billede og putte det i vores app/assets/images mappe 2, vi skal benytte os af et ruby image tag.</p>
+<br>
+<p>endnu en gang skal vi bruge vores specielle rails tag, inde i rails tagget skal vi skrive følgende.</p>
+<br>
+<kbd>image_tag "dit billed navn"</kbd>
+<p>check på din hjemmeside og se om du kan se dit billede, hvis ja Tilykke! nu har du et billede på din side </p>
+<br>
+<h4>styling</h4>
+<br>
+<p>Perfekt!... nu har vi lært at lave links og at putte billeder på vores billeder, men det ser stadig ikke serligt godt ud.. det vi mangler er noget fantastisk styling, dette kan vi gøre på 2 måder</p>
+<br>
+<p>1 vi kan navigere ind i app/assets/stylesheets mappen og åbne de filder der passer til dine side navne og derefter fylde dem med noget super lækkert css kode.. derefter navigere over til app/views/layouts og så åbne vires application.html.erb fil</p>
+<br>
+<p>2 eller vi kan bruge bootstrap (et professionelt styling toolkit der giver en rig pallet af pre definerede laypouts
+knapper osv.</p>
+<br>
+<p>først skal vi instalere bootstrap i vores rails applikation, dette gør vi ved at åbne vores gemfile og </p>

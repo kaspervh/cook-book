@@ -9,7 +9,11 @@
 <br>
 <br>
 <p>der efter burde terminalen printe en række beskeder der ser sådan ud</p>
-<%=image_tag("hello.png", :size => "500x300", :crop => :fill)%>
+<div id= "row">
+	<div id="col-xs-2">
+<%=image_tag "hello.png", class: "image-responsive"%>
+	</div>
+</div>
 <br>
 <br>
 <p>dser det sådan ud? perfekt! <br> hvis du finder mappen der hedder hello_world så kan du se at rails har lavet en masse filer og mapper, vi skal nok komme omkring det hele men lige nu er det ikke vigitgt</p>
@@ -23,12 +27,20 @@
  <kbd>rails server</kbd>
  <p>der efter så skulle terminalen se sådan ud</p>
  <br>
- <%=image_tag("rails-s.png", :size => "500x300", :crop => :fill)%>
+ <div id= "row">
+	<div id="col-xs-2">
+ <%=image_tag "rails-s.png", class: "image-responsive"%>
+ 	</div>
+</div>
 
  <p>goodie!, så er det tid til at åbne vores browser. Da vi liǵe har startet en virtuel server så har vi ikke en almindelig url, men jeg kan fortælle dig at du skal skive localhost:3000 i url fæltet</p>
  <br>
  <p>når du er på siden så skulle det helst se sådan ud</p>
- <%=image_tag("rails-startup.png", :size => "500x300", :crop => :fill)%>
+ <div id= "row">
+	<div id="col-xs-2">
+ <%=image_tag "rails-startup.png", class: "image-responsive"%>
+ 	</div>
+</div>
  <br>
  <br>
  <p>som du kan se så er der kun et billede på vores hjemmeside, og det er ikke en gang et billede som vi kender. så lad os gøre noget ved det og putte vores eget indhold i</p>
@@ -46,12 +58,20 @@
 <p>som du kan se så hoppede sublime text op med alle mapper der høre til vores rails applikation. <br> hvis du kikker i app/controllers, så kan du se at vores kommando har lavet en ny controller der hedder home_controller.</p>
 <p>inde i home controlleren skulle det helst se sådan ud</p>
 <br>
-<%=image_tag("home controller.png", :size => "500x75", :crop => :fill)%>
+<div id= "row">
+	<div id="col-xs-2">
+<%=image_tag "home controller.png", class: "image-responsive"%>
+	</div>
+</div>
 
 <p>skide godt! nu er det tid til at lave den først (og eneste) side i vores ROR applikation. <br>
 da jeg tror på at handling forklare bedre end ord så lad os hoppe direkte igang med at lave en controller action <br> inde i vores controller mellem class og end skal du skrive følgende.</p>
 <br>
-<%= image_tag("controller action.png", size: "200x100", :crop => :fill)%>
+<div id= "row">
+	<div id="col-xs-2">
+<%= image_tag "controller action.png", class: "image-responsive"%>
+	</div>
+</div>
 <p>fedt nok, så er vi faktisk færdig med at bruge controlleren lige nu. men bare rolig, vi kommer mere ind på controlleren på MVC siden og i senere opgaver</p>
 <br>
 
@@ -63,11 +83,38 @@ Dette gør vi gennem vores routes!</p>
 <p>inde i /app/config mappen skulle der være en fil der hedder routes <br>
 hvis du åbner routes så vil den se sådan ud</p>
 
-<%= image_tag("rails routes.png", size: "350x100", :crop => :fill)%>
-
+<div id= "row">
+	<div id="col-xs-2">
+<%= image_tag "rails routes.png", class: "image-responsive"%>
+	</div>
+</div>
 <p>Ńu skal vi lave en forbindelse mellem vores controller action og vores routes <br>
 grunden til at vi gør dette er hvis en bruger taster en url eller klikker på et link <br>
-så sender browseren en forspørgsel til vores routes som så fortæller vores controller hvad den skal begynde at arbejde på</p>
+så sender browseren en forspørgsel til vores routes som så fortæller vores controller hvad den skal begynde at arbejde på </p>
 <br>
-<p></p>
+<p>inde i vores routes skal vi definere hvilken controller der skal sættes igang og hvilken action som controllern skal arbejde på. Dette gør vi ved at skrive følgende.</p>
+<div id= "row">
+	<div id="col-xs-2">
+		<%= image_tag "get home-index.png", class: "image-responsive"  %>
+	</div>
+</div>
+
+<br>
+<p>super... nu mangler vi bare en enkelt lille ting og så har vi næsten lavet vores første app.</p>
+<br>
+<h4>View det der gør siden smuk</h4>
+<br>
+<p>det sidste vi mangler at laver er sidens view. et view er bygget op på html kode da det javascript, og css er det eneste en broser kan læse og forstå<br> inde i app/views skulle der være en mappe der står "layouyts" vi kikker på den mappe i en senere øvelse, men lige nu skal vi have lavet en ny mappe, hvis du sidder med sublime text så kan du højreklikke på views mappen og klikke på "new folder..." <br>
+mappen skal du kalde home og inde i mappen laver du en ny fil der hedder index</p>
+<br>
+<p>fedt nok, nu burde vi have en fungerende side men lad os checke efter. I terminalen skriv følgende komand </p>
+<kbd> Rails server</kbd>
+<br>
+<p>og nu er det så tid at checke efter, hvis du åbner din browser og skriver "localhost:3000/home/index" i adresse fældet, så skulle du komme til en tom web side. <br>
+det ser ikke for godt ud, så lad os afslutte denne øvelse ved at fylde nget tekst ind i den tomme side. <br>
+heldigvis så kan ens view læse css så lad os lave en headder og skrive "Hello World" </p>
+<br>
+<h4>Opsumering</h4>
+
+<p>okay så i deen øvelse der lærte vi at opretten controler, vi lavede en rute der pegede på vores side og vi lavede et view som vi kan fylde html kode ind i. <br> i næste øvelse vil vi kikke på at oprette en hoved side, lave flere sider, skabe links ind imellem 2 sider og noget basalt styling med billeder og css så din side kommer til at ligne den her når du er færdig med næste øvelse.</p>
 
