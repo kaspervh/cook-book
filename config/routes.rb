@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :users
+
   root 'home#index'
 
   get 'home/index'
@@ -23,8 +25,6 @@ Rails.application.routes.draw do
     resources :admins
   end
 
-  namespace :student do
-    resources :pages  end
 end
 
 
