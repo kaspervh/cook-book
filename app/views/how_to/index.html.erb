@@ -1,2 +1,6 @@
 <h1>Fra begynder til udvikler, start her</h1>
 <%= render partial: "shared/how_to_links" %>
+
+<% @page.each do |page| %>
+	<%=link_to "#{page.headder.upcase}", page, class: "btn btn-danger"%>
+<% end %>

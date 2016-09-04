@@ -1,0 +1,12 @@
+<%= form_for @page do |f| %>
+  <%= f.label :headder %>
+  <br>
+  <%= f.text_field :headder %>
+  <br>
+  <%= f.label :content %>
+  <br>
+  <%= f.text_field :content %>
+  <br>
+  <%= f.submit " tilføj side " %>
+<% end %>
+<%= link_to " Tilbage ", admin_pages_path %>

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root 'home#index'
 
@@ -18,4 +17,14 @@ Rails.application.routes.draw do
   get 'how_to/index'
 
   get 'how_to/statiske_sider'
+
+  namespace :admin do
+    resources :pages
+    resources :admins
+  end
+
+  namespace :student do
+    resources :pages  end
 end
+
+

@@ -5,5 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-    content = AboutContent.where(title:"Om os", text:"hej med dig, jeg laver en ny migration").first_or_create(title:"Om os", text:"hej med dig, jeg laver en ny migration")
-    content.save!

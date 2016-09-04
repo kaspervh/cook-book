@@ -1,6 +1,7 @@
 class HowToController < ApplicationController
 
 	def index
+		@page = AdminPage.all
 	end
 
 	def instalation

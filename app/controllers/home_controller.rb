@@ -7,5 +7,4 @@ class HomeController < ApplicationController
 		@about_title = AboutContent.first.title
 		@about_content = AboutContent.first.text
 	end
-
 end
