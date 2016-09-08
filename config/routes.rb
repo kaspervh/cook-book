@@ -24,7 +24,4 @@ Rails.application.routes.draw do
     resources :pages
     resources :admins
   end
-
 end
-
-
