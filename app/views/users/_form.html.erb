@@ -9,8 +9,12 @@
 	<br>
 	<%= user.label :password %>
 	<br>
-	<%= user.text_field :password %>
+	<%= user.password_field :password %>
+	<br>
+	<%= user.label :confirm_password %>
+	<br>
+	<%= user.password_field :password_confirmation %>
 	<br>
 	<br>
 	<%= user.submit "Tilføj Bruger" %>
-<%end%>
+<% end %>
