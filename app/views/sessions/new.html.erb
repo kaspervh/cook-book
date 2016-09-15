@@ -1,0 +1,10 @@
+<h1>Log Ind</h1>
+
+<%= form_tag "/sessions/create" do  %>
+	<h4>Email:</h4>
+	<%= text_field_tag :email %>
+	<h4>Kode ord:</h4>
+	<%= password_field_tag :password %>
+	<br>
+	<%= submit_tag "Log ind" %>
+<% end %>
