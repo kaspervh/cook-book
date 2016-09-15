@@ -1,9 +1,8 @@
-<%=simple_format @hello_world %>
+
 
 <% if current_user %>
-	<% if current_user.role == "student" %>
-		<%= "im right" %>
-	<% elsif current_user.role == "admin" %>
-		<%= "im wrong" %>
-	<% end %>
+  <h1><%= "velkommen #{current_user.username}" %></h1>
+<% else %>
+  <h1> Velkommen til IT-kogebogen</h1>
+  <h5> Kik vores how to's igennem eller log ind for at diskutere med andre elever</h5>  
 <% end %>
