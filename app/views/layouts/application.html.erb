@@ -29,13 +29,24 @@
             <li><%= link_to "about", home_about_path%></li>
           </ul>
           <%=image_tag("ruby.jpg")%>
+          <ul class="nav navbar-nav">
+            <% if current_user %>
+              <% if current_user.role == "admin" %>
+                <li><%= link_to "Ny side", new_admin_page_path %></li>
+              <% end %>
+              <li><%= link_to "Log ud", sessions_destroy_path %></li>
+            <% else %>
+             <li><%= link_to 'Log ind', sessions_new_path %></li>
+             <li><%= link_to "Opret bruger", new_user_path %></li>
+            <% end %>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container", style="margin-top: 200px;">
 			<%= yield %>
-      <%= session[:user_id] %>
+      
     </div><!-- /.container -->
 
 

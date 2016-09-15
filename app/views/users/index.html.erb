@@ -1,8 +1,14 @@
-<% @users.each do |user| %>
-	<h4><%=user.username %></h4>
-	<%= link_to "Vis", user %>
-	<%= link_to "Rediger", edit_user_path(user) %>
-	<%= link_to "Slet", user, method: :delete, data:{confirm: "er du sikker på at du vil slette brugeren?"} %>
-	<br>
-<%end%>
-<%= link_to "Ny bruger", new_user_path %>
+<% if current_user && current_user.role == "admin" %>
+	<% @users.each do |user| %>
+		<h4><%=user.username %></h4>
+		<%= link_to "Vis", user %>
+		<%= link_to "Rediger", edit_user_path(user) %>
+		<%= link_to "Slet", user, method: :delete, data:{confirm: "er du sikker på at du vil slette brugeren?"} %>
+		<br>
+	<%end%>
+	<%= link_to "Ny bruger", new_user_path %>
+<% else %>
+	<h1>Desværre!</h1>
+	<h5>Du har desverre ikke bruger rettigheder til denne side </h5>
+	<%= link_to "hjem", home_index_path %>
+<% end %> 

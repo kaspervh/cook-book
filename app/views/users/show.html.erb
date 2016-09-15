@@ -1,7 +1,14 @@
-<h1>Bruger</h1>
-<br>
-<h4><%= @users.username %></h4>
-<br>
-<h4><%= @users.email %></h4>
-<br>
-<%= link_to "Tilbage", users_path %>
+
+<% if current_user && current_user.role == "admin" %>
+	<h1>Bruger</h1>
+	<br>
+	<h4><%= @users.username %></h4>
+	<br>
+	<h4><%= @users.email %></h4>
+	<br>
+	<%= link_to "Tilbage", users_path %>
+<% else %>
+	<h1>Desværre!</h1>
+	<h5>Du har desverre ikke bruger rettigheder til denne side </h5>
+	<%= link_to "hjem", home_index_path %>
+<% end %> 

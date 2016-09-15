@@ -1,1 +1,9 @@
 <%=simple_format @hello_world %>
+
+<% if current_user %>
+	<% if current_user.role == "student" %>
+		<%= "im right" %>
+	<% elsif current_user.role == "admin" %>
+		<%= "im wrong" %>
+	<% end %>
+<% end %>

@@ -1,10 +1,16 @@
-<% @page.each do |page| %>
+<% if current_user && current_user.role == "admin" %>
+	<% @page.each do |page| %>
+		<br>
+		<h4><%= page.headder %></h4>
+		<%= link_to " vis ", page %>
+		<%= link_to " Rediger ", edit_admin_page_path(page)%>
+		<%= link_to " Slet ", page, method: :delete, data:{confirm: "er du sikker på at du vil slette siden?"} %>
+	<% end %>
 	<br>
-	<h4><%= page.headder %></h4>
-	<%= link_to " vis ", page %>
-	<%= link_to " Rediger ", edit_admin_page_path(page)%>
-	<%= link_to " Slet ", page, method: :delete, data:{confirm: "er du sikker på at du vil slette siden?"} %>
+	<br>
+	<%= link_to "Ny Side", new_admin_page_path %>
+<% else %>
+	<h1>Desværre!</h1>
+	<h5>Du har desverre ikke bruger rettigheder til denne side </h5>
+	<%= link_to "hjem", home_index_path %>
 <% end %>
-<br>
-<br>
-<%= link_to "Ny Side", new_admin_page_path %>

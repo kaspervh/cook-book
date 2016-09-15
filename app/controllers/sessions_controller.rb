@@ -17,6 +17,6 @@ class SessionsController < ApplicationController
   def destroy
   	session[:user_id] = nil
   	redirect_to home_index_path
-  	flash[:notice] = "du er nu logget ud"
+  	flash[:success] = "du er nu logget ud"
   end
 end
