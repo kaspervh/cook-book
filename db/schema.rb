@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160916125905) do
+ActiveRecord::Schema.define(version: 20160916135459) do
 
   create_table "about_contents", force: :cascade do |t|
     t.string   "title"
@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 20160916125905) do
   create_table "admin_pages", force: :cascade do |t|
     t.string   "headder"
     t.string   "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "admin_subject_id"
   end
 
   create_table "admin_subjects", force: :cascade do |t|

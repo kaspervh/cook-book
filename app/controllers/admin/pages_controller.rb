@@ -5,7 +5,7 @@ class Admin::PagesController < ApplicationController
   end
 
   def new
-    @subjects = AdminSubject.all
+    @admin_subjects = AdminSubject.all
     @page = AdminPage.new
   end
 
