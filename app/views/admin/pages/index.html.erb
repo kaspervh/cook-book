@@ -1,4 +1,4 @@
-<% if current_user && current_user.role == "admin" %>
+<% if current_user && current_user.role == "admin" || "teacher"%>
 	<% @page.each do |page| %>
 		<br>
 		<h4><%= page.headder %></h4>

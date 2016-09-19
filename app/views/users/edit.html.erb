@@ -1,5 +1,5 @@
 
-<% if current_user && current_user.role == admin %>
+<% if current_user && current_user.role == "admin" || "teacher" %>
 	<h1>Rediger</h1>
 	<%= render "form" %>
 <% else %>

@@ -6,4 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-users = User.create([{username: "kaspervh", email: "kaspervhauschildt@gmail.com", password: "tvebakk1", role: "admin", created_at: Time.now}])
+User.create([{username: "kaspervh", email: "kaspervhauschildt@gmail.com", password: "tvebakk1", role: "admin", created_at: Time.now},
+{username: "kalle", email: "kalle@gmail.com", password: "tvebakk1", role: "student"}, 
+{username: "christian", email: "christian@gmail.com", password: "tvebakk1", role: "mentor", created_at: Time.now },
+username: "kim", email: "punktum.punktum@punktum.dk", password: "tvebakk1", role: "teacher"])
+
+AdminSubject.create([{name: "Ruby on Rails"}])

@@ -30,8 +30,9 @@
           </ul>
           <ul class="nav navbar-nav">
             <% if current_user %>
-              <% if current_user.role == "admin" %>
+              <% if current_user.role == "admin" || "teacher" %>
                 <li><%= link_to "Ny side", new_admin_page_path %></li>
+                <li><%= link_to "Nyt Emne", new_admin_subject_path %></li>
               <% end %>
               <li><%= link_to "Log ud", sessions_destroy_path %></li>
             <% else %>

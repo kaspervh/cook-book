@@ -12,7 +12,7 @@ class Admin::PagesController < ApplicationController
   def create
     @page = AdminPage.create(admin_page_params)
     @page.save
-    redirect_to admin_pages_path
+    redirect_to how_to_index_path
   end
 
   def show
@@ -41,6 +41,6 @@ class Admin::PagesController < ApplicationController
   private
 
   def admin_page_params
-    params.require(:admin_page).permit!
+    params.require(:admin_page).permit(:content,:headder,:admin_subject_id)
   end
 end

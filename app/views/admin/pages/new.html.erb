@@ -1,4 +1,4 @@
-<% if current_user && current_user.role == "admin" %>
+<% if current_user && current_user.role == "teacher" || "admin" %>
 	<h1>New!... Motherfucker!!!!</h1>
 	<%= render "form" %>
 <% else %>
