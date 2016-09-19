@@ -1,0 +1,8 @@
+<% if current_user && current_user.role == "admin" || "teacher" %>
+  <h1>Opret et nyt emne</h1>
+  <%= render "form" %>
+<% else %>
+  <h1>Desværre!</h1>
+  <h5>Du har desverre ikke bruger rettigheder til denne side </h5>
+  <%= link_to "hjem", home_index_path %>
+<% end %>

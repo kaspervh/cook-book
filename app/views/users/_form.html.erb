@@ -17,11 +17,17 @@
 	<%= user.password_field :password_confirmation %>
 	<br>
 	
-	<% if current_user && current_user.role == "admin" %>
-		<%= user.label :elev %>
+	<% if current_user && current_user.role == "admin" || "teacher" %>
+		<%= user.label :Elev %>
 		<%= user.radio_button :role, "student" %>
-		<%= user.label :admin %>
-		<%= user.radio_button :role, "admin" %>
+		<%= user.label :Lære %>
+		<%= user.radio_button :role, "teacher" %>
+		<% if current_user.role == "admin" %>
+			<%= user.label :admin %>
+			<%= user.radio_button :role, "admin" %>
+			<%= user.label :social_konsulent %>
+			<%= user.radio_button :role, "mentor" %>
+		<% end %>
 	<% end %>
 	<br>
 	<br>

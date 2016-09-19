@@ -1,0 +1,6 @@
+<% @admin_subject.each do |subject| %>
+  <br>
+  <%= subject.name %>
+  <br>
+  <%= link_to "Slet", subject, method: :delete, data:{confirm: "er du sikker på at du vil slette siden?"} %>
+<% end %>

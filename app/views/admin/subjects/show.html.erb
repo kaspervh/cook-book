@@ -1,0 +1,3 @@
+<% @admin_subject.admin_pages.each do |page|%>
+  <%=link_to "#{page.headder.upcase}", page, class: "btn btn-danger"%>
+<% end %>
