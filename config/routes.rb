@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   get 'sessions/new'
 
   post 'sessions/create'
@@ -26,6 +27,7 @@ Rails.application.routes.draw do
 
   get 'how_to/statiske_sider'
 
+  
   namespace :admin do
     resources :pages
     resources :admins
