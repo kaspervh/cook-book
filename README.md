@@ -1,24 +1,5 @@
-# README
+My first ever application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As my first ever application i opted to make a blog style coding cook book wher e i could writeabout my experinces with coding in Ruby.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The idea was to host it online and as i progressed i would use the app as a diary for other new delevoper to read and learn from.
